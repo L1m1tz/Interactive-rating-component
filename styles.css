@@ -24,8 +24,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     color: var(--Light-Grey);
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
@@ -39,7 +41,8 @@ body {
     padding: 30px;
 
 }
-#icon-el{
+
+#icon-el {
     display: flex;
     justify-content: start;
 }
@@ -52,6 +55,7 @@ body {
     background-color: var(--Medium-Grey);
 
 }
+
 img {
     height: 100%;
     width: 100%;
@@ -116,4 +120,8 @@ h1 {
 .submit>button:hover {
     color: var(--Orange);
     background-color: var(--white);
+}
+
+footer{
+    margin-top:50px;
 }
