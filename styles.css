@@ -8,7 +8,6 @@
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
 
-
 }
 
 .attribution {
@@ -21,7 +20,6 @@
 }
 
 body {
-    border: 1px solid red;
     background-color: var(--Very-Dark-Blue);
     margin: 0;
     padding: 0;
@@ -34,38 +32,39 @@ body {
 
 }
 
+.container {
+    max-width: 350px;
+    border-radius: 25px;
+    background-color: var(--Dark-Blue);
+    padding: 30px;
+
+}
+#icon-el{
+    display: flex;
+    justify-content: start;
+}
 
 .image {
-    max-width: 20px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
     border-radius: 50%;
-    height: 20px;
-    border: 1px solid red;
     background-color: var(--Medium-Grey);
 
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
 
 h1 {
     color: var(--white);
 }
 
-img {
-    height: 50%;
-    width: 50%;
-    object-fit: fill;
-}
-
-.container {
-    max-width: 350px;
-    border: 1px solid blue;
-    border-radius: 25px;
-    background-color: var(--Dark-Blue);
-    padding: 30px;
-
-}
-
-#ratings {
+/* #ratings {
     border: 1px solid white;
-}
+} */
 
 .rate {
     display: flex;
@@ -74,22 +73,47 @@ img {
 }
 
 .rating {
-    border: 1px solid blue;
+
+    border: none;
+    background-color: var(--Medium-Grey);
+    color: var(--white);
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    cursor: pointer;
+}
+
+.rating:hover {
+    background-color: var(--Light-Grey);
+    color: var(--white);
+}
+
+.rating:focus {
+    background-color: var(--Orange);
+    color: var(--white);
 }
 
 .submit {
     width: 100%;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 
 }
-.submit > button{
-    outline: none;
+
+.submit>button {
+
+    font-size: 17px;
+    border: none;
     border-radius: 50px;
     width: 100%;
     padding: 10px;
     margin: 10px;
+    background-color: var(--Orange);
+    color: var(--white);
+}
+
+.submit>button:hover {
+    color: var(--Orange);
+    background-color: var(--white);
 }
