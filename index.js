@@ -2,7 +2,10 @@ let iconEl = document.getElementById("icon-el");
 let headerEl = document.getElementById("header-el");
 let paragraphEl = document.getElementById("paragraph-el");
 let ratings = document.getElementById("ratings");
+let tyImage = document.getElementById("ty-image");
 let selected = 0;
+
+
 
 function whichButton(numb) {
   selected = numb;
@@ -11,7 +14,8 @@ function whichButton(numb) {
 function rate() {
   //Rating state end
   if (selected > 0) {
-    iconEl.textContent = "You selected " + selected + " out of 5";
+    tyImage.style.display = "block";
+    iconEl.textContent =  "You selected " + selected + " out of 5";
     ratings.textContent = "";
     //Thank you state end
     headerEl.textContent = "Thank you!";
