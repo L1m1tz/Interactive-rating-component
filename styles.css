@@ -23,7 +23,7 @@ body {
     background-color: var(--Very-Dark-Blue);
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
 .container {
     max-width: 350px;
     border-radius: 25px;
-    background-color: var(--Dark-Blue);
+    background-color: #1a222d ;
     padding: 30px;
 
 }
@@ -52,7 +52,7 @@ body {
     height: 15px;
     padding: 10px;
     border-radius: 50%;
-    background-color: var(--Medium-Grey);
+    background-color: var(--Dark-Blue);
 
 }
 
@@ -79,7 +79,7 @@ h1 {
 .rating {
 
     border: none;
-    background-color: var(--Medium-Grey);
+    background-color: var(--Dark-Blue);
     color: var(--white);
     border-radius: 50%;
     height: 50px;
